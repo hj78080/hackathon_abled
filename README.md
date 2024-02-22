@@ -111,7 +111,26 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
    <img width="552" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/eefa6452-64d8-4727-88c4-7797c7204d41">
 <br/>
 
+
+
+
 4. 직무 영상 제공
    - 원하는 구인 공고를 클릭하면,구인 공고와 관련된 직무 영상이 바로 작동하도록 연결
       https://github.com/hj78080/hackathon_abled/assets/102707496/d155737e-3801-4460-9e15-8b98ccbc9226
+
+
+
+## 🎤 음성인식 기능 설계 🎤
+
+
+
+## 📕 피그마 앱 프로토타입 설계 📕
+
+
+
+
+## 👩‍💻 안드로이드 스튜디오 개발 파이프라인 👩‍💻
+
+
+
 
