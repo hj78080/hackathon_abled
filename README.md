@@ -10,7 +10,7 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 |성호정|UI/UX 설계 ,프로토타입 개발|
 |임형준|앱 개발 ,프로토타입 개발|
 
-## 👏 system architecture 👏
+## 🏛️ system architecture 🏛️
 
 <img width="941" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/c32f8235-c917-4a2e-b869-c44d2762e7e1">
 
@@ -37,7 +37,7 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 <img width="1133" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/4965cf7e-f2c9-47fe-b85d-a6750ac70fb4">
 
 
-## 👏 AutoML Flow chart 👏
+## 📈 AutoML Flow chart 📈
 
 1. Pycaret 설치
    - 라이브러리 설치 및 데이터 임포트
@@ -71,7 +71,7 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
   <img width="384" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/1be9c4d9-1961-4da8-a856-3423a5eb49eb">
 
 
-## 👏 일자리 추천 유저 테스트 👏
+## ❤️‍🩹 일자리 추천 유저 테스트 ❤️‍🩹
 
 <img width="463" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/c8ee4833-1542-458d-b546-b110b4cdbb97">
 
@@ -126,14 +126,33 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 
 
 ## 📕 피그마 앱 프로토타입 설계 📕
+
+
+1. 사용자는 자신의 연령, 장애유형, 중증여부, 근무지역 입력을 입력할 수 있습니다. 사용자를 고려해 직관적이고 한눈에 볼수있는 UI를 도입하였습니다.
+<img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/f423f862-bfe1-488a-a34f-26b68c23fe91">
+
+2. AutoML 기반의 AI 모델을 통해 가장 높은 확률을 가진 맞춤형 직업 추천을 해줍니다. 시각화 자료 또한 제공하며 실시간 API를 통해 맞춤형 공고를 제안합니다. 
+<img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/524c5899-71cf-4837-86de-325e31bd5b9d">
+
+3. 홈페이지 또한 사용자를 고려하여 쉽고 직관적인 UI를 도입하였습니다. 일자리 찾기 , 커뮤니티 , 장애유형별 고용현황을 볼 수 있으며 커뮤니티를 사용하기 위한 회원가입/로그인 로직을 구현하였습니다.
+<img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/e365b9d2-458d-49fa-8643-99da822e1bdf">
+
+4. 자연어 처리와 STT 기술을 UI에 도입하여, 사용자가 요구하는 페이지를 직관적으로 제공함으로 보다 쉽게 사용할 수 있고, 신체적으로 불편한 장애인들의 선택지가 늘어날 수 있게 구현하였습니다.
+<img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/d5ca3fbb-16ed-48f3-a828-102d46818f21">
+
+5. 커뮤니티 페이지입니다. 커뮤니티 페이지는 질문게시판, 정보 공유 게시판, 급한 구인 게시판으로 나누어져있으며 사용자들이 편하게 자신들의 이야기를 하고 정보를 공유할 수 있도록 기능에 따라 설계하였습니다.
+<img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/29335d4e-8dec-4542-9fb6-1227fefd1dbf">
+
 1. 피그마 링크
    https://www.figma.com/file/3Pp2s4s9Yi9eFRBdS3Ht2j/Abled_%ED%95%B4%EC%BB%A4%ED%86%A4?type=design&node-id=0%3A1&mode=design&t=LaSdLeZz1hlGhxIR-1
 2. 프로토타입 시연 영상
    https://www.youtube.com/shorts/kd3qTiy557I
 
 
-
 ## 👩‍💻 안드로이드 스튜디오 개발 파이프라인 👩‍💻
+
+
+
 
 
 
