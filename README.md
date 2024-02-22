@@ -126,7 +126,8 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 
 
 ## 📕 피그마 앱 프로토타입 설계 📕
-
+   - 피그마 링크
+     https://www.figma.com/file/3Pp2s4s9Yi9eFRBdS3Ht2j/Abled_%ED%95%B4%EC%BB%A4%ED%86%A4?type=design&node-id=0%3A1&mode=design&t=LaSdLeZz1hlGhxIR-1
 
 
 
