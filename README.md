@@ -143,9 +143,7 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 5. 커뮤니티 페이지입니다. 커뮤니티 페이지는 질문게시판, 정보 공유 게시판, 급한 구인 게시판으로 나누어져있으며 사용자들이 편하게 자신들의 이야기를 하고 정보를 공유할 수 있도록 기능에 따라 설계하였습니다.
 <img width="974" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/29335d4e-8dec-4542-9fb6-1227fefd1dbf">
 
-1. 피그마 링크
-   https://www.figma.com/file/3Pp2s4s9Yi9eFRBdS3Ht2j/Abled_%ED%95%B4%EC%BB%A4%ED%86%A4?type=design&node-id=0%3A1&mode=design&t=LaSdLeZz1hlGhxIR-1
-2. 프로토타입 시연 영상
+### 프로토타입 시연 영상
    https://www.youtube.com/shorts/kd3qTiy557I
 
 
