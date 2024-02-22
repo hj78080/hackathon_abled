@@ -1,0 +1,67 @@
+<resources>
+    <string-array name="birth_years">
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+    </string-array>
+
+    <string-array name="disable_types">
+        <item>지체장애</item>
+        <item>지적장애</item>
+        <item>정신장애</item>
+        <item>시각장애</item>
+        <item>청각장애</item>
+        <item>뇌병변장애</item>
+        <item>자폐성장애</item>
+        <item>신장장애</item>
+    </string-array>
+
+    <string-array name="disable_state">
+        <item>중증</item>
+        <item>경증</item>
+        <item>모름</item>
+    </string-array>
+
+    <string-array name="region">
+        <item>서울</item>
+        <item>경기</item>
+        <item>인천</item>
+        <item>대전</item>
+        <item>세종</item>
+        <item>충남</item>
+        <item>충북</item>
+        <item>광주</item>
+    </string-array>
+</resources>
