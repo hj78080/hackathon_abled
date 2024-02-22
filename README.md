@@ -1,4 +1,4 @@
-# hackathon_abled
+# 🖥️ hackathon_abled
 AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 
 
@@ -83,11 +83,12 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 
 
 
-## 👏 세부 직무 설명 영상 제작 👏
+## 🎬 세부 직무 설명 영상 제작 🎬
 
+### Model
 <img width="942" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/f2012c75-db7c-4416-b2c7-1f3051dd77e2">
 <br/>
-Diffussion generation model 
+Diffussion generation model 을 기반으로 하는
 <br/>
 Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으로 받아 
 깨끗한 패치를 예측하도록 훈련받음.
@@ -95,5 +96,22 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 특히, Sora는 diffusion transformers 이므로 언어 모델링,
 컴퓨터 비전 , 이미지 생성과 같은 다양한 분야에서 뛰어난 성능을 보여줌.
 
+### 영상 제작 Flow
+1. 실시간 API
+   - ‘한국장애인고용공단 장애인 구인 실시간 현황 API’에서 필요한 직무 기능이 들어간 키워드 발췌
+   <img width="552" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/cb4de5d9-1439-45fc-a06f-0d71e346dd29">
+<br/>
 
+2. 텍스트 전처리
+   - 발췌한 직무 기능 키워드를 Gpt 3.5 api를 사용하여 Sora의 프롬프트에 알맞게 튜닝하는 전처리를 거침
+<br/>
+
+3. Sora에 입력
+   - Sora에 프롬프트를 입력해 영상을 제작
+   <img width="552" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/eefa6452-64d8-4727-88c4-7797c7204d41">
+<br/>
+
+4. 직무 영상 제공
+   - 원하는 구인 공고를 클릭하면,구인 공고와 관련된 직무 영상이 바로 작동하도록 연결
+      https://github.com/hj78080/hackathon_abled/assets/102707496/d155737e-3801-4460-9e15-8b98ccbc9226
 
