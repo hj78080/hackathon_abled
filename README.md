@@ -149,7 +149,7 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 
 ## 👩‍💻 안드로이드 스튜디오 개발 파이프라인 👩‍💻
 
-<img width="922" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/59ef3944-51fc-4149-8c13-4186343d55d4">
+<img width="923" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/80e8fed6-daf1-4240-8342-3bfcfa8835cd">
 
 
 
