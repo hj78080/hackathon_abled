@@ -1,4 +1,4 @@
-package com.example.abled;
+package com.example.abled.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.abled.util.MenuBarHelper;
+import com.example.abled.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -48,12 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // 하단 메뉴 바
         MenuBarHelper menuBarHelper = new MenuBarHelper(this);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                menuBarHelper.handleItemSelected(item);
-                return true;
-            }
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            menuBarHelper.handleItemSelected(item);
+            return true;
         });
     }
 
@@ -63,7 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         System.out.println(itemId);
 
         if(itemId == R.id.button_findJob) {
-            System.out.println("asdads");
+            Intent intent = new Intent(MainActivity.this, FindJobActivity.class);
+            startActivity(intent);
         }
 
         if (itemId == R.id.button_community) {
@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (itemId == R.id.button_automl){
-
+            Intent intent = new Intent(MainActivity.this, AutoMLActivity.class);
+            startActivity(intent);
         }
     }
 }

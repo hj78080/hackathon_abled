@@ -1,11 +1,15 @@
-package com.example.abled;
+package com.example.abled.util;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.MenuItem;
+
+import com.example.abled.R;
+import com.example.abled.activity.MainActivity;
+import com.example.abled.activity.MikeActivity;
+import com.example.abled.activity.SetInfoActivity;
 
 public class MenuBarHelper {
 
@@ -48,18 +52,11 @@ public class MenuBarHelper {
         builder.setTitle("알림");
         builder.setMessage("정보를 변경하시겠습니까?");
 
-        builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(context, SetInfoActivity.class);
-                context.startActivity(intent);
-            }
+        builder.setPositiveButton("예", (dialogInterface, i) -> {
+            Intent intent = new Intent(context, SetInfoActivity.class);
+            context.startActivity(intent);
         });
-
-        builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) { }
-        });
+        builder.setNegativeButton("아니오", null);
 
         builder.show();
     }

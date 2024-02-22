@@ -18,7 +18,7 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +27,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".OnboardingActivity" />
-        <activity android:name=".SetInfoActivity" />
-        <activity android:name=".CommunityActivity"/>
-        <activity android:name=".MikeActivity"/>
-        <activity android:name=".CommunityAskActivity"/>
+        <activity android:name=".activity.OnboardingActivity" />
+        <activity android:name=".activity.SetInfoActivity" />
+        <activity android:name=".activity.CommunityActivity"/>
+        <activity android:name=".activity.MikeActivity"/>
+        <activity android:name=".activity.CommunityAskActivity"/>
+        <activity android:name=".activity.AutoMLActivity"/>
+        <activity android:name=".activity.FindJobActivity"/>
     </application>
 
 </manifest>

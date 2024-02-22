@@ -1,4 +1,4 @@
-package com.example.abled;
+package com.example.abled.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class HttpRequest{
 
-    public static void sendPostRequest(String text) {
+    public static String sendPostRequest(String text) {
         try {
             // 플라스크 서버의 URL
             URL url = new URL("http://serverip:5000/api?type=text");
@@ -40,6 +40,8 @@ public class HttpRequest{
                 // 서버에서 받은 응답(response)을 사용
                 String serverResponse = response.toString();
                 System.out.println("서버 응답: " + serverResponse);
+                return serverResponse;
+
             } else {
                 // 응답이 실패일 때 처리
                 System.out.println("HTTP 요청 실패. 응답 코드: " + responseCode);
@@ -50,5 +52,6 @@ public class HttpRequest{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return null;
     }
 }

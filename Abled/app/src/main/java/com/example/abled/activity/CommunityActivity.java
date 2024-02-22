@@ -1,4 +1,4 @@
-package com.example.abled;
+package com.example.abled.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.abled.util.MenuBarHelper;
+import com.example.abled.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -30,12 +32,9 @@ public class CommunityActivity extends AppCompatActivity implements View.OnClick
 
         MenuBarHelper menuBarHelper = new MenuBarHelper(this);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                menuBarHelper.handleItemSelected(item);
-                return true;
-            }
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            menuBarHelper.handleItemSelected(item);
+            return true;
         });
     }
 

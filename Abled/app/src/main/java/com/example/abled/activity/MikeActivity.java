@@ -1,6 +1,7 @@
-package com.example.abled;
+package com.example.abled.activity;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -8,7 +9,6 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,10 +17,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.example.abled.util.HttpRequest;
+import com.example.abled.util.MenuBarHelper;
+import com.example.abled.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-import java.text.BreakIterator;
 import java.util.ArrayList;
 
 public class MikeActivity extends AppCompatActivity {
@@ -37,12 +39,9 @@ public class MikeActivity extends AppCompatActivity {
 
         MenuBarHelper menuBarHelper = new MenuBarHelper(this);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                menuBarHelper.handleItemSelected(item);
-                return true;
-            }
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            menuBarHelper.handleItemSelected(item);
+            return true;
         });
 
         // 권한 체크
@@ -64,6 +63,53 @@ public class MikeActivity extends AppCompatActivity {
         });
     }
 
+
+    // 음성 인식 종료시 호출, 해당 페이지로 이동함
+    private void movePage(String page){
+        Class cls = null;
+        String dialog = null;
+
+        switch (page){
+            case "info":
+                cls = SetInfoActivity.class;
+                dialog = "정보 수정";
+                break;
+            case "joblist":
+                cls = FindJobActivity.class;
+                dialog = "일자리 찾기";
+                break;
+            case "automl":
+                cls = AutoMLActivity.class;
+                dialog = "유형 별 고용현황";
+                break;
+            case "commu":
+                cls = CommunityActivity.class;
+                dialog = "커뮤니티";
+                break;
+            case "home":
+                cls = MainActivity.class;
+                dialog = "처음";
+                break;
+            default:
+                Toast.makeText(getApplicationContext(),"다시 말씀해 주세요.",Toast.LENGTH_SHORT).show();
+                return;
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("알림");
+        builder.setMessage(dialog + " 페이지로 이동하시겠습니까?");
+
+        Class finalCls = cls;
+        builder.setPositiveButton("예", (dialogInterface, i) -> {
+            Intent pageIntent = new Intent(MikeActivity.this, finalCls);
+            startActivity(pageIntent);
+        });
+        builder.setNegativeButton("아니오", null);
+        builder.show();
+    }
+
+
+    // 음성 인식 클래스
     private RecognitionListener listener = new RecognitionListener() {
         @Override
         public void onReadyForSpeech(Bundle params) {
@@ -84,44 +130,10 @@ public class MikeActivity extends AppCompatActivity {
 
         @Override
         public void onError(int error) {
-            String message;
-
-            switch (error) {
-                case SpeechRecognizer.ERROR_AUDIO:
-                    message = "오디오 에러";
-                    break;
-                case SpeechRecognizer.ERROR_CLIENT:
-                    message = "클라이언트 에러";
-                    break;
-                case SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS:
-                    message = "퍼미션 없음";
-                    break;
-                case SpeechRecognizer.ERROR_NETWORK:
-                    message = "네트워크 에러";
-                    break;
-                case SpeechRecognizer.ERROR_NETWORK_TIMEOUT:
-                    message = "네트워크 타임아웃";
-                    break;
-                case SpeechRecognizer.ERROR_NO_MATCH:
-                    message = "찾을 수 없음";
-                    break;
-                case SpeechRecognizer.ERROR_RECOGNIZER_BUSY:
-                    message = "RECOGNIZER가 바쁨";
-                    break;
-                case SpeechRecognizer.ERROR_SERVER:
-                    message = "서버가 이상함";
-                    break;
-                case SpeechRecognizer.ERROR_SPEECH_TIMEOUT:
-                    message = "말하는 시간 초과";
-                    break;
-                default:
-                    message = "알 수 없는 오류";
-                    break;
-            }
-
-            Toast.makeText(getApplicationContext(), "에러가 발생하였습니다. : " + message,Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "다시 말씀해 주세요.", Toast.LENGTH_SHORT).show();
         }
 
+        //음성 인식 결과를 서버에 전송 하여, 페이지 추천을 응답 받음
         @Override
         public void onResults(Bundle results) {
             // 말을 하면 ArrayList에 단어를 넣고 textView에 단어를 이어준다.
@@ -132,8 +144,17 @@ public class MikeActivity extends AppCompatActivity {
 
             textView.setText(text);
             new Thread(() -> {
-                // 네트워크 작업 수행
-                HttpRequest.sendPostRequest(text);
+                String response = HttpRequest.sendPostRequest(text);
+
+                // 추천 페이지가 없을 경우
+                if (response.equals("none")) {
+                    Toast.makeText(getApplicationContext(), "관련 페이지가 없습니다.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                runOnUiThread(() -> {
+                    movePage(response);
+                });
             }).start();
         }
 

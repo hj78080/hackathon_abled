@@ -1,4 +1,4 @@
-package com.example.abled;
+package com.example.abled.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.abled.R;
 
 public class OnboardingActivity extends AppCompatActivity {
 
@@ -15,14 +17,11 @@ public class OnboardingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_onboarding);
 
         ImageButton onboardImgButton = findViewById(R.id.onboardImg);
-        onboardImgButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(OnboardingActivity.this, SetInfoActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
-            }
+        onboardImgButton.setOnClickListener(v -> {
+            Intent intent = new Intent(OnboardingActivity.this, SetInfoActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
         });
 
 
