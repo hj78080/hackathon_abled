@@ -31,6 +31,8 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 
 2. 근로지역 전처리
    - 세분화 된 근로지역을 지역별로 분석을 용이하게 하기 위해 도 권역 단위로 끊어서 진행
+  
+### ✨ Exploratory Data Analysis ✨
      
 <img width="1146" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/28267ade-2813-436f-8b93-4f6be753916f">
 
