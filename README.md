@@ -130,8 +130,8 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 3. 서버는 사용자의 음성 텍스트와 Description의 코사인 유사도를 비교하여 가장 유사도가 높은 페이지를 제공.
 <br>
 결과 예시<br>
-<img width="300" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/c104a292-ac12-48c1-a9cc-1e6f44c755f1">
-<img width="300" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/9b73f758-9f22-4df1-82d0-892eda7ebdb1">
+<img height="250" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/c104a292-ac12-48c1-a9cc-1e6f44c755f1">
+<img height="250" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/9b73f758-9f22-4df1-82d0-892eda7ebdb1">
    
 
 ## 📕 피그마 앱 프로토타입 설계 📕
