@@ -128,7 +128,11 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 1. 서버에 각 페이지의 제목, 기능 등을 포함하는 Description 코드를 작성합니다.
 2. 안드로이드 음성 인식 기능을 이용하여 사용자의 음성 Data를 텍스트로 변환하여 서버에 전송합니다.
 3. 서버는 사용자의 음성 텍스트와 Description의 코사인 유사도를 비교하여 가장 유사도가 높은 페이지를 제공합니다.
-
+<br>
+결과 예시
+<img width="552" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/c104a292-ac12-48c1-a9cc-1e6f44c755f1">
+<img width="552" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/137899379/9b73f758-9f22-4df1-82d0-892eda7ebdb1">
+   
 
 ## 📕 피그마 앱 프로토타입 설계 📕
 
