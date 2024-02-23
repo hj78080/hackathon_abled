@@ -16,12 +16,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    /*
-        year = prefs.getInt("year", 2000);
-        type = prefs.getString("type", "지체장애");
-        state = prefs.getString("state", "중증");
-        region = prefs.getString("region", "서울");
-    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -144,15 +144,13 @@ public class MikeActivity extends AppCompatActivity {
 
             textView.setText(text);
             new Thread(() -> {
-                String response = HttpRequest.sendPostRequest(text);
-
-                // 추천 페이지가 없을 경우
-                if (response.equals("none")) {
-                    Toast.makeText(getApplicationContext(), "관련 페이지가 없습니다.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
+                String response = HttpRequest.sendPageRequest(text);
                 runOnUiThread(() -> {
+                    // 추천 페이지가 없을 경우
+                    if (response.equals("none")) {
+                        Toast.makeText(getApplicationContext(), "관련 페이지가 없습니다.", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
                     movePage(response);
                 });
             }).start();
