@@ -1,4 +1,4 @@
-package joblist;
+package job_api;
 /* ex)
     <busplaName>행복한요양병원</busplaName>
     <cntctNo>1588-1519</cntctNo>
