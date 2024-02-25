@@ -34,9 +34,9 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
   
 ### ✨ Exploratory Data Analysis ✨
      
-<img width="1146" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/28267ade-2813-436f-8b93-4f6be753916f">
+<img width="1000" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/28267ade-2813-436f-8b93-4f6be753916f">
 
-<img width="1133" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/4965cf7e-f2c9-47fe-b85d-a6750ac70fb4">
+<img width="1000" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/4965cf7e-f2c9-47fe-b85d-a6750ac70fb4">
 
 
 ## 📈 AutoML Flow chart 📈
@@ -88,7 +88,7 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 ## 🎬 세부 직무 설명 영상 제작 🎬
 
 ### Model
-<img width="942" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/f2012c75-db7c-4416-b2c7-1f3051dd77e2">
+<img width="800" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/f2012c75-db7c-4416-b2c7-1f3051dd77e2">
 <br/>
 Diffussion generation model 을 기반으로 하는
 <br/>
@@ -147,7 +147,7 @@ Sora는 OpenAI에서 공개된 모델로, 잡음이 있는 패치를 입력으�
 <img width="674" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/e365b9d2-458d-49fa-8643-99da822e1bdf">
 
 4. 자연어 처리와 STT 기술을 UI에 도입하여, 사용자가 요구하는 페이지를 직관적으로 제공함으로 보다 쉽게 사용할 수 있고, 신체적으로 불편한 장애인들의 선택지가 늘어날 수 있게 구현하였습니다.
-<img width="474" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/d5ca3fbb-16ed-48f3-a828-102d46818f21">
+<img width="450" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/d5ca3fbb-16ed-48f3-a828-102d46818f21">
 
 5. 커뮤니티 페이지입니다. 커뮤니티 페이지는 질문게시판, 정보 공유 게시판, 급한 구인 게시판으로 나누어져있으며 사용자들이 편하게 자신들의 이야기를 하고 정보를 공유할 수 있도록 기능에 따라 설계하였습니다.
 <img width="674" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/29335d4e-8dec-4542-9fb6-1227fefd1dbf">
