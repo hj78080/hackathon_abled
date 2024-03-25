@@ -12,7 +12,7 @@ AI 기반 장애인 고용 매칭 서비스: “Abled” 앱 개발
 
 ## 🏛️ system architecture 🏛️
 
-<img width="941" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/c32f8235-c917-4a2e-b869-c44d2762e7e1">
+<img width="941" alt="image" src="https://github.com/hj78080/hackathon_abled/assets/102707496/9a4cde39-add1-4171-b671-0fb5b8b8a62f">
 
 
 
